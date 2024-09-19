@@ -8,11 +8,12 @@ int main() {
 
     cout << "введи число: " << endl;
     cin >> x1;
-    cout << "введи второе число: " << endl;
-    cin >> x2;
-
+    
     cout << "введи операцию (+, -, *, /, %): ";
     cin >> znak;
+    
+    cout << "введи второе число: " << endl;
+    cin >> x2;
 
     if (znak== '+') {
         itog = x1 + x2;
@@ -35,12 +36,8 @@ int main() {
         }
     }
     else if (znak == '%') {
-        if (x2 != 0) {
-            itog = x1 % x2;
+            itog = x1 / x2 * 100;
             cout << "результат: " << itog << endl;
-        } else {
-            cout << "Ошибка: Деление на ноль!" << endl;
-        }
     }
     else {
         cout << "ввыбрана не верная операция" << endl;
