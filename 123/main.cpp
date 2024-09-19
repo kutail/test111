@@ -36,7 +36,7 @@ int main() {
         }
     }
     else if (znak == '%') {
-            itog = x1 / x2 *1 00;
+            itog = x1 / x2 * 100;
             cout << "результат: " << itog << endl;
     }
     else {
